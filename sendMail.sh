@@ -6,10 +6,10 @@ cd "$WORK_DIR_SCRIPT_MAIL";
 CURRENT_LOCAL="$(pwd)";
 SMTP_SRV="smtp.office365.com";
 SMTP_PORT="587";
-SMTP_USR="$(echo -ne 'YXNzaXN0ZWMubm9jQHNybWFzc2V0LmNvbS5icgo=' | base64 -d)";
-SMTP_PASS="$(echo -ne 'NGcxbDF0eUBST09UIUAjMjAyMQo=' | base64 -d)";
-MAIL_FROM="$(echo -ne 'YXNzaXN0ZWMubm9jQHNybWFzc2V0LmNvbS5icgo=' | base64 -d)";
-MAIL_TO="$(echo -ne "bXNAc29tb3NhZ2lsaXR5LmNvbS5icg==" | base64 -d)";
+SMTP_USR="$(echo -ne '<e-mail>' | base64 -d)";
+SMTP_PASS="$(echo -ne '<password>' | base64 -d)";
+MAIL_FROM="$(echo -ne '<e-mail>' | base64 -d)";
+MAIL_TO="$(echo -ne "<e-mail>" | base64 -d)";
 SUBJECT="REPORT: REVIEW ENVIRONMENTS REMOVAL - SRM";
 
 HEADER_REPORT_FILE="
